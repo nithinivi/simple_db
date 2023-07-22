@@ -1,2 +1,2 @@
 # simple_db
-sqlite clone with c
+simple sqlite clone with c
