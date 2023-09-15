@@ -8,7 +8,7 @@
 void print_promt() { printf("db > "); }
 
 void print_row(Row *row) {
-  printf("(%d, %s, %s) \n", row->id, row->username, row->email);
+  printf("(%d, %s, %s)\n", row->id, row->username, row->email);
 }
 
 void read_input(InputBuffer *input_buffer) {
@@ -54,6 +54,7 @@ PrepareResult prepare_statement(InputBuffer *input_buffer,
     int args_assigned = sscanf(
         input_buffer->buffer, "insert %d %s %s", &(statement->row_to_insert.id),
         statement->row_to_insert.username, statement->row_to_insert.email);
+
     if (args_assigned < 3) {
       return PREPARE_SYNTAX_ERROR;
     }

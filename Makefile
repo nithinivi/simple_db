@@ -20,4 +20,7 @@ all: $(OBJ)
 clean: 
 	rm $(OBJ)
 	rm -rf build/*
+
+test:
+	bundle exec rspec spec/test_spec.rb --format doc
 	
