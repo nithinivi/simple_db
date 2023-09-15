@@ -1,3 +1,3 @@
 
 make: main.c
-	gcc -o sdb main.c -I.
+	gcc  -lstdc++ -o sdb main.c -I. 
