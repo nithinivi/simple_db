@@ -1,4 +1,4 @@
-#if !defined(TABLE_H)
+#ifndef TABLE_H
 #define TABLE_H
 
 #include <stdint.h>
@@ -32,5 +32,6 @@ typedef struct
   uint32_t num_rows;
   void *pages[TABLE_MAX_PAGES];
 } Table;
+
 
 #endif // TABLE_H

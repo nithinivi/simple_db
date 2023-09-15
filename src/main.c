@@ -1,10 +1,15 @@
-#include "include/interface.h"
-#include "include/sqlCommandProcesor.h"
-#include "include/utils.h"
+#include "../include/interface.h"
+#include "../include/sqlCommandProcesor.h"
 #include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
+void print_promt() { printf("db > "); }
+
+void print_row(Row *row) {
+  printf("(%d, %s, %s) \n", row->id, row->username, row->email);
+}
 
 void read_input(InputBuffer *input_buffer) {
   // getline uses realloc the resize of buffer
