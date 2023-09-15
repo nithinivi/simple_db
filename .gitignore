@@ -152,5 +152,5 @@ build-iPhoneSimulator/
 
 Gemfile.lock 
 
-bin/*
+bin
 build/*
