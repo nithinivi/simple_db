@@ -1,0 +1,10 @@
+{
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "/Users/nithinvarghese/learn/simple_db/build",
+            "binaryPath": "/Users/nithinvarghese/learn/simple_db/build/db",
+            "binaryArgs": [],
+            "externalConsole": true
+        }
+    ]
+}
